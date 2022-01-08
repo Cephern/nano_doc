@@ -4,7 +4,12 @@ import "./Navbar.css";
 // navigation
 import { NavLink, Link } from "react-router-dom";
 
+// hooks
+import { useState } from "react";
+
 export default function Navbar() {
+  const [user, setUser] = useState(true);
+
   return (
     <nav className="nav-main">
       <ul className="left">
@@ -19,16 +24,18 @@ export default function Navbar() {
         </li>
       </ul>
 
-      <ul className="left">
-        <li>
-          <Link to="/login">Войти</Link>
-        </li>
-        <li>
-          <Link to="/signup">Регистрация</Link>
-        </li>
-      </ul>
+      {user && (
+        <ul className="right">
+          <li>
+            <NavLink to="/login">Войти</NavLink>
+          </li>
+          <li>
+            <NavLink to="/signup">Регистрация</NavLink>
+          </li>
+        </ul>
+      )}
 
-      <button>Logout</button>
+      {!user && <button>Logout</button>}
     </nav>
   );
 }
