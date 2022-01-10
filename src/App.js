@@ -9,21 +9,24 @@ import Doctors from "./pages/Doctors/Doctors";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Login from "./pages/Login/Login";
 import Signup from "./pages/Signup/Signup";
+import { AuthContextProvider } from "./context/AuthContext";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
+        <AuthContextProvider>
+          <Navbar />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/diagnostics" element={<Diagnostics />} />
-          <Route path="/doctors" element={<Doctors />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="signup" element={<Signup />} />
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/diagnostics" element={<Diagnostics />} />
+            <Route path="/doctors" element={<Doctors />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="signup" element={<Signup />} />
+          </Routes>
+        </AuthContextProvider>
       </BrowserRouter>
     </div>
   );

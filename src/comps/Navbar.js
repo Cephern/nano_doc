@@ -2,13 +2,13 @@
 import "./Navbar.css";
 
 // navigation
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 // hooks
-import { useState } from "react";
+import { useAuthContext } from "../hooks/useAuthContext";
 
 export default function Navbar() {
-  const [user, setUser] = useState(true);
+  const { user } = useAuthContext();
 
   return (
     <nav className="nav-main">
@@ -24,7 +24,9 @@ export default function Navbar() {
         </li>
       </ul>
 
-      {user && (
+      {user ? (
+        <button>Logout</button>
+      ) : (
         <ul className="right">
           <li>
             <NavLink to="/login">Войти</NavLink>
@@ -34,8 +36,6 @@ export default function Navbar() {
           </li>
         </ul>
       )}
-
-      {!user && <button>Logout</button>}
     </nav>
   );
 }
