@@ -1,0 +1,152 @@
+.Home {
+  width: 70%;
+  margin: 10px auto;
+}
+
+.Home .greeting {
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: -6px 0 5px 0 rgba(0, 0, 0, 0.4), 6px 0 5px 0 rgba(0, 0, 0, 0.4);
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.Home .greeting h2 {
+  padding: 10px;
+  overflow-wrap: break-word;
+  margin: 0;
+}
+
+.Home .actions {
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-around;
+  max-width: 600px;
+}
+
+.Home .actions a {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 15% 6%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: all 0.1s ease-in;
+}
+
+.Home .actions a:hover {
+  transform: scale(0.95);
+  color: orange;
+  border-color: orange;
+}
+
+.Home .appointment-history {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #f4f4f4;
+}
+
+.Home .appointment-history h3 {
+  text-align: center;
+  font-size: 1.6em;
+}
+
+.Home .appointment-history .sorting {
+  border: 2px solid #fff;
+  width: 60%;
+  border-radius: 20px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Home .appointment-history .sorting div {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Home .appointment-history .sorting .arrow-down {
+  margin-left: 5px;
+}
+
+.Home .appointment-history .sorting div:hover .arrow-down {
+  color: orange;
+}
+
+.Home .appointment-history li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home .appointment-history .appointment-main {
+  max-width: 80%;
+  margin: 10px 0;
+  padding: 8px 5px;
+}
+
+.Home .appointment-main .appointment-inner-details {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 10px 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.Home .appointment-main .appointment-inner-details .appointment-diagnosis {
+  cursor: pointer;
+  color: #980f5a;
+}
+
+.Home .appointment-main .appointment-inner-details .appointment-doctor {
+  cursor: pointer;
+  color: #ffab76;
+}
+
+.Home .appointment-main .index {
+  color: orange;
+}
+
+.Home .appointment-main .date {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 0;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.Home .appointment-main .appointment-date {
+  color: #a267ac;
+}
+
+.Home .appointment-history .arrow {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+}
+
+.Home .appointment-history .arrow-done {
+  color: green;
+  border-color: green;
+}
+
+.Home .appointment-history .arrow-awaiting {
+  color: yellow;
+  border-color: yellow;
+}
+
+.Home .appointment-history .arrow-canceled {
+  color: red;
+  border-color: red;
+}

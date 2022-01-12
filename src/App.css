@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  background-color: #ddd;
+  background: center/cover url("assets/backgrounds/home.jpg") no-repeat fixed;
 }
 
 ul {

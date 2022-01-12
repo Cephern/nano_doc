@@ -25,7 +25,7 @@ export default function Navbar() {
       </ul>
 
       {user ? (
-        <button>Logout</button>
+        <button className="logout">Выйти</button>
       ) : (
         <ul className="right">
           <li>
