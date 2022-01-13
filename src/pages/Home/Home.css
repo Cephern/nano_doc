@@ -3,21 +3,6 @@
   margin: 10px auto;
 }
 
-.Home .greeting {
-  width: 60%;
-  margin: 0 auto;
-  border-radius: 20px;
-  box-shadow: -6px 0 5px 0 rgba(0, 0, 0, 0.4), 6px 0 5px 0 rgba(0, 0, 0, 0.4);
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-.Home .greeting h2 {
-  padding: 10px;
-  overflow-wrap: break-word;
-  margin: 0;
-}
-
 .Home .actions {
   margin: 60px auto;
   display: flex;

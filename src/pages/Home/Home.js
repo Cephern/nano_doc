@@ -7,6 +7,7 @@ import { useAuthContext } from "../../hooks/useAuthContext";
 
 // routing
 import { Link } from "react-router-dom";
+import Greeting from "../../comps/Greeting";
 
 export default function Home() {
   const { user } = useAuthContext();
@@ -79,9 +80,7 @@ export default function Home() {
 
   return (
     <div className="Home">
-      <div className="greeting">
-        <h2>Здравствуйте, {user.name}</h2>
-      </div>
+      <Greeting />
 
       <div className="actions">
         <Link to="/diagnostict" className="diagnostic">

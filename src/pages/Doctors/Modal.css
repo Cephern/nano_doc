@@ -1,0 +1,91 @@
+.modal {
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  overflow-y: scroll;
+}
+
+.modal-main {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f4f4f4;
+  text-align: center;
+  font-size: 1.1em;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  background-color: #000;
+  padding: 20px;
+  margin: 60px 0;
+  width: 600px;
+}
+
+.modal-main .close {
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.modal-main img {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.modal-main .name {
+  font-size: 1.5rem;
+}
+
+.modal-main .specialty span {
+  color: #24a19c;
+}
+
+.modal-main .exp span {
+  color: orange;
+}
+
+.modal-main .tile {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.modal-main .education p {
+  margin: 0;
+  width: 120px;
+}
+
+.modal-main .education span {
+  width: 450px;
+}
+
+.modal-main .workingPlaces p {
+  margin: 0;
+  width: 120px;
+}
+
+.modal-main .workingPlaces span {
+  width: 450px;
+}
+
+.modal-main .aboutSelf p {
+  margin: 0;
+  width: 120px;
+}
+
+.modal-main .aboutSelf span {
+  width: 450px;
+}
