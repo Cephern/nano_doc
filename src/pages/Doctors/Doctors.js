@@ -237,6 +237,7 @@ export default function Doctors() {
           setSelectedDoctor={setSelectedDoctor}
         />
       )}
+      {/* Ti petih */}
     </div>
   );
 }
