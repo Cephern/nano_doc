@@ -12,7 +12,7 @@
 
 .doctors-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
   justify-items: center;
   margin-top: 60px;
