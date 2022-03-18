@@ -1,0 +1,124 @@
+#About {
+	width: 80%;
+	margin: 10px auto;
+}
+
+#About .main {
+	margin-top: 60px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	color: #eee;
+	border-radius: 8px;
+}
+
+#About .description {
+	width: 45%;
+	margin: 20px auto;
+}
+
+#About .description p {
+	padding: 10px 20px;
+	border: 2px solid #fff;
+	border-radius: 8px;
+	background-color: rgba(0, 0, 0, 0.85);
+	text-align: center;
+	font-size: 1.2em;
+	margin: 0;
+}
+
+#About .social {
+	margin: 20px auto;
+	text-align: center;
+}
+
+#About .social h3 {
+	text-shadow: #000 2px 2px 2px;
+}
+
+#About .social ul {
+	display: flex;
+	justify-content: space-between;
+	width: 40%;
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 8px;
+	border: 2px solid #fff;
+}
+
+#About .social li {
+	border: 1px solid #fff;
+	border-radius: 4px;
+	padding: 6px;
+	background-color: rgba(0, 0, 0, 0.85);
+	cursor: pointer;
+}
+
+#About .reviews {
+	width: 40%;
+	padding: 10px 20px;
+	margin: 20px auto;
+}
+
+#About .reviews form {
+	width: 60%;
+	margin: 0 auto;
+	border: 2px solid #fff;
+	border-radius: 8px;
+	background-color: rgba(0, 0, 0, 0.85);
+	margin-bottom: 40px;
+}
+
+#About .reviews form {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 20px;
+}
+
+#About .reviews form textarea {
+	resize: none;
+	border-radius: 8px;
+	padding: 4px 8px;
+	margin-bottom: 10px;
+}
+
+#About .reviews form p {
+	text-align: center;
+}
+
+#About .reviews form label {
+	text-align: center;
+	margin-bottom: 6px;
+}
+
+#About .reviews form button {
+	width: 40%;
+	margin: 0 auto;
+	border: 2px solid #fff;
+	border-radius: 8px;
+	padding: 4px;
+	background-color: #eee;
+	color: #000;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+#About .reviews-inner {
+	border: 2px solid #fff;
+	border-radius: 8px;
+	background-color: rgba(0, 0, 0, 0.85);
+	padding: 2px 20px;
+}
+
+#About .reviews-inner .review {
+	margin: 14px auto;
+	background-color: #eee;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	color: #000;
+	padding: 4px;
+}
+
+#About .reviews-inner h4 {
+	margin: 0;
+}

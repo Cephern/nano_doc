@@ -18,7 +18,7 @@ export default function Doctors() {
 
 	return (
 		<div className={`Doctors ${selectedDoctor && "no-scroll"}`}>
-			<h2>Наши Врачи</h2>
+			<h2 className="title">Наши Врачи</h2>
 			<div className="doctors-grid">
 				{doctors.map((doctor) => (
 					<div key={doctor.id} className="doctor-card">
