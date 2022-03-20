@@ -54,7 +54,7 @@ export default function Appointment() {
 
 	return (
 		<div className="Appointment">
-			<h2 className="title">Запись на прием</h2>
+			<h2 className="title">Запись на Прием</h2>
 			<form>
 				<label>
 					<Select
