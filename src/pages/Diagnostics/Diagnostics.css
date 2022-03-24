@@ -1,0 +1,45 @@
+.Diagnostics {
+	width: 70%;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.Diagnostics form {
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 8px;
+	border: 2px solid #fff;
+	color: #fff;
+	margin: 40px auto 0;
+	width: 60%;
+}
+
+.Diagnostics form .question {
+	border-top: 2px solid orange;
+	border-bottom: 2px solid orange;
+	margin: 4px 0;
+}
+
+.Diagnostics form .answers {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.Diagnostics form .answers button {
+	padding: 10px;
+	margin: 8px 0;
+	border-radius: 8px;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.Diagnostics form .submit {
+	margin: 20px;
+	padding: 10px;
+	border-radius: 8px;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+}
