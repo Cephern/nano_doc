@@ -9,7 +9,7 @@ export default function Greeting() {
 
   return (
     <div className="greeting">
-      <h2>Здравствуйте, {user.name}</h2>
+      <h2>Здравствуйте, {user ? user.displayName : "Гость"}</h2>
     </div>
   );
 }

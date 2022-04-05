@@ -6,9 +6,12 @@ import { NavLink } from "react-router-dom";
 
 // hooks
 import { useAuthContext } from "../hooks/useAuthContext";
+import { useLogout } from "../hooks/useLogout";
 
 export default function Navbar() {
   const { user } = useAuthContext();
+
+  const { logout } = useLogout();
 
   return (
     <nav className="nav-main">
@@ -25,7 +28,9 @@ export default function Navbar() {
       </ul>
 
       {user ? (
-        <button className="logout">Выйти</button>
+        <button className="logout" onClick={logout}>
+          Выйти
+        </button>
       ) : (
         <ul className="right">
           <li>

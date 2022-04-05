@@ -1,22 +1,48 @@
 // styles
 import "./Login.css";
 
+// hooks
+import { useLogin } from "../../hooks/useLogin";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 export default function Login() {
-	return (
-		<div className="Login">
-			<form>
-				<h2>Авторизация</h2>
-				<label>
-					<input type="text" placeholder="логин" />
-				</label>
+  const { error, login } = useLogin();
+  const navigate = useNavigate();
 
-				<label>
-					<input type="password" placeholder="пароль" />
-				</label>
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-				<button>Войти</button>
-				<button>Регистрация</button>
-			</form>
-		</div>
-	);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    login(email, password);
+  };
+
+  return (
+    <div className="Login">
+      <form onSubmit={handleSubmit}>
+        <h2>Авторизация</h2>
+        <label>
+          <input
+            type="text"
+            placeholder="логин"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+          />
+        </label>
+
+        <label>
+          <input
+            type="password"
+            placeholder="пароль"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </label>
+
+        <button>Войти</button>
+        <button>Регистрация</button>
+      </form>
+    </div>
+  );
 }

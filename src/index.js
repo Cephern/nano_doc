@@ -2,10 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import "react-datepicker/dist/react-datepicker.css";
+import { AuthContextProvider } from "./context/AuthContext";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <AuthContextProvider>
     <App />
-  </React.StrictMode>,
+  </AuthContextProvider>,
   document.getElementById("root")
 );
