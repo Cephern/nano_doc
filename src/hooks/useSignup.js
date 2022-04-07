@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { useAuthContext } from "./useAuthContext";
-import { auth } from "../firebase/config";
+import { auth, db } from "../firebase/config";
+
+// firebase imports
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { updateProfile } from "firebase/auth";
+import { doc, setDoc } from "firebase/firestore";
 
 export const useSignup = () => {
   const [error, setError] = useState(null);
@@ -31,7 +34,17 @@ export const useSignup = () => {
       displayName,
     });
 
-    dispatch({ type: "LOGIN", payload: res.user });
+    const newUser = {
+      uid: res.user.uid,
+      email,
+      displayName,
+      role: "patient",
+    };
+
+    const ref = await doc(db, "users", res.user.uid);
+    await setDoc(ref, newUser);
+
+    dispatch({ type: "LOGIN", payload: { user: res.user, role: "patient" } });
   };
 
   return { signup, error };

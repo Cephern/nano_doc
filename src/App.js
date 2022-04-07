@@ -19,7 +19,7 @@ import { useAuthContext } from "./hooks/useAuthContext";
 import { Navigate } from "react-router-dom";
 
 function App() {
-  const { user, authIsReady } = useAuthContext();
+  const { user, authIsReady, role } = useAuthContext();
 
   return (
     <div className="App">

@@ -3,12 +3,10 @@ import "./Login.css";
 
 // hooks
 import { useLogin } from "../../hooks/useLogin";
-import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 export default function Login() {
   const { error, login } = useLogin();
-  const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
